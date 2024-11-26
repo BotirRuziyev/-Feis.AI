@@ -1,0 +1,39 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "pm2prod": "pm2 start npm --name front -- run preview",
+    "pm2restart": "pm2 restart front",
+    "pm2delete": "pm2 delete front"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "@yeger/vue-masonry-wall": "^5.0.16",
+    "bootstrap": "^5.3.3",
+    "masonry-layout": "^4.2.2",
+    "moment": "^2.30.1",
+    "nuxt": "^3.13.2",
+    "path": "^0.12.7",
+    "pinia": "^2.1.7",
+    "qrcode-vue3": "^1.7.1",
+    "qs": "^6.11.2",
+    "stripe": "^17.3.1",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-carousel": "^0.4.0",
+    "vue3-carousel-nuxt": "^1.1.3",
+    "vue3-clipboard": "^1.0.0"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.10",
+    "@types/masonry-layout": "^4.2.8",
+    "element-plus": "^2.8.6",
+    "sass": "^1.69.5"
+  }
+}

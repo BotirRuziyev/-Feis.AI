@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as e,Z as o,o as n}from"./Bs-UNA1x.js";const c={transition:"home"},r={class:"app-layouts-auth"},p={class:"app-container app-layouts-auth-container"};function i(t,_,d,l,u,f){return n(),s("div",r,[e("div",p,[o(t.$slots,"default")])])}const m=a(c,[["render",i]]);export{m as default};

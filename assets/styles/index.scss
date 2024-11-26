@@ -1,0 +1,305 @@
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+//@import 'variables';
+//@import 'transition';
+//@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//  $colors: (
+//    'primary': (
+//      'base': green,
+//    ),
+//  )
+//);
+
+:root {
+  --app-white: #ffffff;
+  --app-black: #121212f0;
+  --app-orange: #ffa05c;
+  --app-orange-text: #ffa05c;
+  --app-light-gray: #c7c7c7;
+  --app-grey: #535353;
+  --app-grey-text-footer: #818181;
+  --app-grey-bg-footer: #1b1b1b;
+
+  --app-base-border-radius: 20px;
+
+  --el-loading-spinner-size: 250px !important;
+  --el-loading-fullscreen-spinner-size: 250px !important;
+  --gray: #818181;
+  --black: #121212;
+  --light-gray: #c7c7c7;
+  --orange: #ff5900;
+  --dark-gray: #272727;
+  --placeholder: #454545;
+  --field-bg: #1b1b1b;
+  --error-red: #ff3b3b;
+  --stroke-gray: #2d2b2a;
+  --navgray: #535353;
+}
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Libre Franklin", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Roboto", sans-serif;
+}
+
+html.dark {
+  color-scheme: dark;
+  --el-color-primary: var(--app-orange) !important;
+  --el-color-primary-light-3: rgb(50.8, 116.6, 184.5);
+  --el-color-primary-light-5: rgb(42, 89, 137.5);
+  --el-color-primary-light-7: rgb(33.2, 61.4, 90.5);
+  //--el-input-border: red!important;
+  //--el-input-border: 1px solid var(--app-black)!important
+  --el-input-border-color: red !important;
+
+  --el-border-color: var(--app-black) !important;
+}
+
+.bg-black {
+  background: var(--app-black);
+}
+.bg-grey {
+  background: var(--app-grey-bg-footer);
+}
+.app-orange-text {
+  color: var(--app-orange-text) !important;
+}
+.app-grey-text {
+  color: var(--app-grey-text-footer);
+}
+
+.app-light-gray-color {
+  color: var(--app-light-gray);
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.app-base-top-left-right-border-radius {
+  border-top-left-radius: var(--app-base-border-radius);
+  border-top-right-radius: var(--app-base-border-radius);
+}
+.app-base-border-radius {
+  border-radius: var(--app-base-border-radius);
+}
+.app-base-border-radius {
+  border: 1px solid #2d2b2a;
+}
+.app-base-padding {
+  padding: 20px;
+}
+.app-base-margin-top-bottom {
+  margin: 20px 0;
+}
+
+.app-light-gray {
+  color: var(--app-light-gray);
+}
+.app-orange-text {
+  color: var(--app-orange-text);
+}
+html {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+h1,
+h2,
+h3,
+p {
+  //margin: 0!important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/************************************************/
+.el-slider__button {
+  background-color: var(--app-orange) !important;
+}
+.el-radio-button {
+  background-color: var(--app-black);
+  border-radius: 20px !important;
+  margin-right: 5px;
+}
+.el-radio-button__inner {
+  background-color: var(--app-black);
+  border: none !important;
+  outline: none !important;
+  border-radius: 20px !important;
+}
+.el-radio-button__inner.is-active {
+  background: var(--el-color-primary) !important;
+}
+.el-radio-group {
+  border: none !important;
+  outline: none !important;
+}
+.el-input__wrapper {
+  align-items: center;
+  background-color: var(--app-black) !important;
+  border: 1px solid black !important;
+}
+.el-textarea {
+  background-color: var(--app-black) !important;
+}
+.el-upload-dragger {
+  background-color: var(--app-black) !important;
+}
+
+.el-button.el-button--primary {
+  background: linear-gradient(92.54deg, #ffa05c 5.24%, #ff804d 98.58%) !important;
+  padding: 15px 30px !important;
+  height: 47px;
+  border-radius: 60px;
+  border: 0;
+  a {
+    color: var(--app-white);
+    text-decoration: none;
+  }
+}
+
+/************************************************/
+
+.app-container {
+  width: 100%;
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    width: 100%;
+    padding: 0;
+  }
+  .carousel {
+    height: 100%;
+  }
+  .carousel__viewport {
+    height: 100%;
+    .carousel__track {
+      height: 100%;
+    }
+  }
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.manrope {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-franklin {
+  font-family: "Libre Franklin", serif;
+  font-optical-sizing: auto;
+  //font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+  color: var(--app-white);
+  font-size: 16px;
+
+  font-family: "Libre Franklin", serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 45px;
+  margin: 0;
+}
+h2 {
+  font-family: "Libre Franklin, sans-serif";
+  font-size: 28px;
+}
+h3 {
+  font-family: "Libre Franklin, sans-serif";
+  font-size: 18px;
+}
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+.legal-text {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .legal-text {
+    font-size: 10px;
+  }
+}
+
+.small-text {
+  font-size: 12px;
+}
+//Legal text, small descriptions Manrope 12 px
+
+.text-center {
+  text-align: center;
+}
+.w-100 {
+  width: 100%;
+}
+.font-weight-600 {
+  font-weight: 600 !important;
+}
