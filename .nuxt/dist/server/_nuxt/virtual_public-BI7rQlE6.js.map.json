@@ -1,0 +1,1 @@
+{"file":"virtual_public-BI7rQlE6.js","mappings":";AAAuD,MAAe,aAAA,gBAAgB,oBAAoB;","names":[],"sources":["../../../../virtual:public?%2Fnotifications.svg"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/notifications.svg\")"],"version":3}

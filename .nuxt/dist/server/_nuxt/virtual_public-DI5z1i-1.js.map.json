@@ -1,0 +1,1 @@
+{"file":"virtual_public-DI5z1i-1.js","mappings":";AAAuD,MAAe,aAAA,gBAAgB,kBAAkB;","names":[],"sources":["../../../../virtual:public?%2Ficon%2Flogout.svg"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/icon/logout.svg\")"],"version":3}

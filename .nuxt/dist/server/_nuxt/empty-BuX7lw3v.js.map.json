@@ -1,0 +1,1 @@
+{"file":"empty-BuX7lw3v.js","mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,SAAA,eAAA,MAAA,OAAA,SAAA,QAAA;;;;;;;;;;","names":[],"sources":["../../../../layouts/empty.vue"],"sourcesContent":["<template>\r\n  <slot />\r\n</template>\r\n"],"version":3}

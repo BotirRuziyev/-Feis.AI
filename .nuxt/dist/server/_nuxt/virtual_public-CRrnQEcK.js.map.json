@@ -1,0 +1,1 @@
+{"file":"virtual_public-CRrnQEcK.js","mappings":";AAAuD,MAAe,aAAA,gBAAgB,uBAAuB;","names":[],"sources":["../../../../virtual:public?%2Ficon%2FaiGenerator.svg"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/icon/aiGenerator.svg\")"],"version":3}

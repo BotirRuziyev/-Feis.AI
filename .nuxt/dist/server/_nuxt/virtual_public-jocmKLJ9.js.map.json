@@ -1,0 +1,1 @@
+{"file":"virtual_public-jocmKLJ9.js","mappings":";AAAuD,MAAe,aAAA,gBAAgB,wBAAwB;","names":[],"sources":["../../../../virtual:public?%2Ficon%2Fchevron_back.svg"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/icon/chevron_back.svg\")"],"version":3}

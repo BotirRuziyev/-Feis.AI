@@ -2,9 +2,7 @@
   <div class="subscription">
     <div class="page-head">
       <h1 class="page-title">Choose Your Subscription Plan</h1>
-      <p class="page-description">
-        You can upgrade or cancel subsription plan at any time.
-      </p>
+      <p class="page-description">You can upgrade or cancel subsription plan at any time.</p>
     </div>
     <div class="subscription-items">
       <div class="subscription-item" v-for="item in items" :key="item.price">
@@ -16,19 +14,13 @@
             <div class="card-item__price">
               <div>{{ item.price }} <span>/week</span></div>
               <el-button class="subscribe" type="primary">
-                <a v-if="item.isFree" @click="cancelSubscription">
-                  Subscribe
-                </a>
+                <a v-if="item.isFree" @click="cancelSubscription"> Subscribe </a>
                 <a v-else :href="item.paymentLink"> Subscribe </a>
               </el-button>
             </div>
           </div>
           <div class="tariffs-list">
-            <div
-              class="list-item"
-              v-for="tarif of item.tariffs"
-              :key="tarif.id"
-            >
+            <div class="list-item" v-for="tarif of item.tariffs" :key="tarif.id">
               <div class="icon">
                 <span v-if="tarif.possible">
                   <img src="/icon/check_small.svg" alt="" />
@@ -43,22 +35,12 @@
             </div>
           </div>
         </div>
-        <el-button
-          type="primary"
-          class="subscribe-btn"
-          :class="item.isFree ? '' : 'active'"
-        >
+        <el-button type="primary" class="subscribe-btn" :class="item.isFree ? '' : 'active'">
           <a v-if="item.isFree" @click="cancelSubscription"> Subscribe </a>
           <a v-else :href="item.paymentLink"> Subscribe </a>
         </el-button>
 
-        <el-button
-          v-if="store.getUser?.stripeProductId === item.stripeProductId"
-          type="danger"
-          @click="cancelSubscription"
-        >
-          Cancel or to free
-        </el-button>
+        <el-button v-if="store.getUser?.stripeProductId === item.stripeProductId" type="danger" @click="cancelSubscription"> Cancel or to free </el-button>
       </div>
     </div>
     <div class="subscription-payments__methods">
@@ -74,7 +56,7 @@
           <img src="/img/google_Pay.svg" alt="" />
         </button>
         <button class="list-item">
-          <img src="/img/paypal.svg" alt="" />
+          <img src="/img/PayPal.svg" alt="" />
         </button>
         <button class="list-item">
           <img src="/img/Visa.svg" alt="" />
@@ -87,9 +69,7 @@
         </button>
       </div>
     </div>
-    <p class="page-mobile-description">
-      You can upgrade or cancel subsription plan at any time.
-    </p>
+    <p class="page-mobile-description">You can upgrade or cancel subsription plan at any time.</p>
     <!--    <pre>{{ items }}</pre>-->
     <!--    <pre>stripeProductId: {{ store.getUser?.stripeProductId }}</pre>-->
     <!--    <pre>subscriptionStripeId: {{ store.getUser?.subscriptionStripeId }}</pre>-->
@@ -197,11 +177,7 @@ export default {
     ];
 
     const cancelSubscription = async () => {
-      const { data, error } = await useApiFetch<any>(
-        `/subscription/stripe/cancelSubscription`,
-        "POST",
-        {},
-      );
+      const { data, error } = await useApiFetch<any>(`/subscription/stripe/cancelSubscription`, "POST", {});
       if (!error.value) {
         await store.getUserApi();
       }
@@ -264,11 +240,7 @@ export default {
             display: none;
             height: auto;
             box-shadow: 0 4px 34px 0 rgba(255, 117, 43, 0.2);
-            background: linear-gradient(
-              110deg,
-              #ffa05c 0%,
-              #ff804d 100%
-            ) !important;
+            background: linear-gradient(110deg, #ffa05c 0%, #ff804d 100%) !important;
             border-radius: 60px;
             padding: 5px 12px !important;
             font-family: var(--second-family);
@@ -329,11 +301,7 @@ export default {
         }
       }
       .subscribe-btn.active {
-        background: linear-gradient(
-          110deg,
-          #ffa05c 0%,
-          #ff804d 100%
-        ) !important;
+        background: linear-gradient(110deg, #ffa05c 0%, #ff804d 100%) !important;
       }
     }
   }

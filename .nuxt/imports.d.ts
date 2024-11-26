@@ -34,5 +34,4 @@ export { default as wsConn } from '../composables/wsConn';
 export { emailRule, passMinLength, passLength, required, requiredMsgNull, faceModelImagesCount, resetForm, useValidateForm, useValidateFormInField, notification } from '../utils/element.utils';
 export { Truncate, getWidthHeight, isValidINN, drawerSize } from '../utils/index';
 export { defineStore, acceptHMRUpdate, usePinia, storeToRefs } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
