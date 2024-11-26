@@ -74,7 +74,7 @@
           <img src="/img/google_Pay.svg" alt="" />
         </button>
         <button class="list-item">
-          <img src="/img/paypal.svg" alt="" />
+          <img src="/img/PayPal.svg" alt="" />
         </button>
         <button class="list-item">
           <img src="/img/Visa.svg" alt="" />
