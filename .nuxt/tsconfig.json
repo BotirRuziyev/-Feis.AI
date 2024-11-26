@@ -93,7 +93,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/8bbf13cb-c731-4714-ba2e-bec22f26368e.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."
@@ -152,6 +152,7 @@
   "exclude": [
     "../dist",
     "../node_modules",
+    "../../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@pinia/nuxt/runtime/server",
     "../node_modules/@pinia/nuxt/dist/runtime/server",
