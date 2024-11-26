@@ -1,1 +1,0 @@
-import{_ as t,c as s,a as o,o as r}from"./Bs-UNA1x.js";const n={setup(){return{}}};function a(c,e,l,p,i,u){return r(),s("div",null,e[0]||(e[0]=[o("h1",null,"subscription filed",-1)]))}const f=t(n,[["render",a]]);export{f as default};
